@@ -54,6 +54,7 @@ func TestLLMServerCompletionFormat(t *testing.T) {
 
 		// JSON
 		`"json"`,
+		`"grammar"`,
 		`{"type":"object"}`,
 	}
 	for _, valid := range valids {

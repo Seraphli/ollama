@@ -392,14 +392,14 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: dist-darwin
-          path: dist
-      - uses: actions/download-artifact@v4
-        with:
-          name: dist-windows
-          path: dist
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: dist-darwin
+      #     path: dist
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: dist-windows
+      #     path: dist
       - uses: actions/download-artifact@v4
         with:
           pattern: dist-linux-*

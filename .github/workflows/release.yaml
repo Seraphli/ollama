@@ -383,7 +383,7 @@ jobs:
 
   # Aggregate all the assets and ship a release
   release:
-    needs: [darwin-sign, windows-sign, linux-build]
+    needs: [linux-build]
     runs-on: linux
     environment: release
     permissions:
